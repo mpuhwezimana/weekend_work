@@ -3,7 +3,11 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
-  p string.split("")
+  string_array = string.split("")  
+  string.split()
+  string_array.sort! { |x,y| y <=> x}
+  string_array.join
+
 end
 
 # Driver code - don't touch anything below this line.
